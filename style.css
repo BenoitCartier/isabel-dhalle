@@ -148,7 +148,7 @@ table, th, td {
 td {
     text-align: left;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 95%;
     color: white;
     /* background-color:white; */
 }
@@ -157,7 +157,7 @@ tr:nth-child(odd){background-color: #342125;opacity:0.8;}
 
 th {
     font-weight:bold ;
-    font-size: 2vw;
+    font-size: 150%;
     text-align: left;
     background-color: #342125;opacity:1;
     color: white;
@@ -229,19 +229,19 @@ th.info {
     /* TABLE STYLING */
 
     td {
-        font-size: 3vw;
+        font-size: 100%;
     }
 
     th {
-        font-size: 4vw;
+        font-size: 175%;
     }
 
     th.evenement {
-        width: 60%;
+        width: 75%;
     }
 
     th.datum {
-        width: 50%;
+        width: 60%;
     }
 
     th.locatie {
@@ -249,7 +249,7 @@ th.info {
     }
 
     th.info {
-        width: 50%
+        width: 60%
     }
 
     table, th, td {

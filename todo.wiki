@@ -5,12 +5,17 @@
     * [X] achtergrond centreren  #beadc139
     * [X] text size  #6a25dfd0
     * [X] favicon  #9d6750aa
-    * [ ] clean up source code  #9923da91
-        * [ ] tabs & inspringingen  #bffacbf0
+    * [o] clean up source code  #9923da91
+        * [X] tabs & inspringingen  #bffacbf0
         * [ ] s/o naar cartier  #7a80dec9
     * [X] animaties  #bd7055c5
         * [X] foto index  #524e754b
+    * [ ] *IMPORTANT*: jump glitch scrolling !!  #bfe49492
     * [ ] online zetten  #730bdf2e
+        * [ ] domein  #a33078f5
+            * [ ] domein kopen  #fc933ae0
+            * [ ] domein linken aan public ip-adres raspberrypi  #2592f3e6
+        * [ ] port forwarding  #087ae3fd
 
 = about =
     * [X] margin onder transparante doos  #71a7bf2d
@@ -19,7 +24,7 @@
     * [O] *HAMBURGER*  #f49b0f4f
         * [X] hamburger/ pannenkoeken/ sandwich  #28ca6d8c
         * [X] stapel pannenkoeken valt van 't tafel  #10291e4d
-        * [o] hamburger-kruis #d46c0b90
+        * [o] hamburger-kruis  #d46c0b90
             * [X] kruis  #d0a5fc35
             * [ ] sint-andrieskruis  #3a0dedf2
         * [X] hamburger werkt niet altijd  #ea091ce0
@@ -31,7 +36,7 @@
 = media =
     * [X] youtube-video resize  #8497f891
     * [X] grootte youtube-embed  #3f422756
-    * [ ] beschrijving kolom  #c18adecd
+    * [ ] beschrijving kolom (eventueel)  #c18adecd
 
 = evenementen =
     * [X] *!!! TABEL BROKEN !!!*  #d8acb12b

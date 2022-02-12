@@ -1,8 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #D86A2F;
+}
+
+/* selected link */
+a:active {
+  color: #D86A2F;opacity:0.5;
+}
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: inline-block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  font-size: 18.000000000000004px;
+}
+
+.navbar a.icon {
+    visibility: hidden;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: none; /* Float a link to the right */
+  padding: 25px 20px; /* Add some padding */
+}
+
+.navbar a.left {
+  float: left; /* Float a link to the right */
+  font-size: 35px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.navbar a.active {
+    color: gray; /* give gray color to active tab */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a.right:hover {
+}
+
+.navbar #myLinks {
+    display: block;
+    float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+  font-weight:
+}
+
+.description {
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+  img {
+    position: relative;
+    display: block;
+    top: 6vw;
+    width: 100%;
+    height: auto; padding-bottom: 2vh;
+  }
+
+.footer {
+  padding: 1px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+  font-size: 18px
+}
+
+
+/* TABLE STYLING */
+
+table {
+    table-layout: fixed;
+
+}
+table, th, td {
+  /* border: 1px solid black; */
+  width: 75%;
+  /* border-collapse: collapse; */
+  padding: 10px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+td {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1vw;
+  color: white;
+  /* background-color:white; */
+}
+tr:nth-child(even){background-color: black;opacity:0.8;}
+tr:nth-child(odd){background-color: #342125;opacity:0.8;}
+
+th {
+  font-weight:bold ;
+  font-size: 2vw;
+  text-align: left;
+  background-color: #342125;opacity:1;
+  color: white;
+
+}
+
+th.evenement {
+    width: 60%;
+}
+
+th.datum {
+    width: 50%;
+}
+
+th.locatie {
+    width: 60%;
+}
+
+th.info {
+    width: 50%
+}
+
+
+/* --------------------- */
+/*   Responsive layout   */
+/* --------------------- */
+
+@media screen and (max-width: 840px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+      overflow: hidden;
+      position: relative;
+    }
+
+  .navbar a {
+    width: 100%;
+    display: block;
+    padding: 16px 16px;
+    position: relative;
+    }
+
+  .navbar a.name.left {
+    float: left;
+    width: 35%;
+    font-size: 4.5vw;
+    }
+
+   .navbar a.icon.left {
+       display: block;
+       position: absolute;
+       right: 0;
+       top: 0;
+       visibility: visible;
+       width: 18%;
+    }
+
+    .navbar #myLinks {
+        display: none;
+        float: none;
+    }
+
+    /* TABLE STYLING */
+
+    td {
+        font-size: 3vw;
+    }
+
+    th {
+        font-size: 4vw;
+    }
+
+    th.evenement {
+        width: 60%;
+    }
+
+    th.datum {
+        width: 50%;
+    }
+
+    th.locatie {
+        width: 60%;
+    }
+
+    th.info {
+        width: 50%
+    }
+
+    table, th, td {
+        width: 150%;
+        padding: 10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+
+/* ------------- */
+/*  COPIED CODE  */
+/* ------------- */
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
+
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -232,275 +493,3 @@
   left: 0;
   right: 0;
 }
-
-
-
-/* Style the top navigation bar */
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-}
-
-/* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: #D86A2F;
-}
-
-/* selected link */
-a:active {
-  color: #D86A2F;opacity:0.5;
-}
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: inline-block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold;
-  font-size: 18.000000000000004px;
-  /* border-bottom: 4px solid transparent; */
-}
-
-
-.navbar a.icon {
-    visibility: hidden;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: none; /* Float a link to the right */
-  padding: 25px 20px; /* Add some padding */
-}
-
-.navbar a.left {
-  float: left; /* Float a link to the right */
-  font-size: 35px;
-  text-align: center;
-  vertical-align: center;
-}
-.navbar a.active {
-    color: gray; /* give gray color to active tab */
-}
-
-/* Change color on hover/mouse-over */
-.navbar a.right:hover {
-}
-
-.navbar #myLinks {
-    display: block;
-    float: right;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* Ensure proper sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%; /* Set the width of the sidebar */
-  background-color: #f1f1f1; /* Grey background color */
-  padding: 20px; /* Some padding */
-}
-
-/* Main column */
-.main {
-  flex: 70%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
-  font-weight:
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 840px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 900px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 840px) {
-  .navbar {
-      overflow: hidden;
-      position: relative;
-    }
-
-  .navbar a {
-    width: 100%;
-    /* display: block; */
-    display: block;
-    padding: 16px 16px;
-    position: relative;
-    }
-
-  .navbar a.name.left {
-    float: left;
-    width: 35%;
-    font-size: 4.5vw;
-    }
-
-   .navbar a.icon.left {
-       display: block;
-       position: absolute;
-       right: 0;
-       top: 0;
-       visibility: visible;
-       width: 18%;
-    }
-    .navbar a.right {
-    }
-
-
-    .navbar #myLinks {
-        display: none;
-        float: none;
-    }
-}
-
-.footer {
-  padding: 1px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
-  font-size: 18px
-}
-
-
-/* TABLE STYLING */
-
-table {
-    table-layout: fixed;
-
-}
-table, th, td {
-  /* border: 1px solid black; */
-  width: 75%;
-  /* border-collapse: collapse; */
-  padding: 10px;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-
-td {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1vw;
-  color: white;
-  /* background-color:white; */
-}
-tr:nth-child(even){background-color: black;opacity:0.8;}
-tr:nth-child(odd){background-color: #342125;opacity:0.8;}
-
-th {
-  font-weight:bold ;
-  font-size: 2vw;
-  text-align: left;
-  background-color: #342125;opacity:1;
-  color: white;
-
-}
-
-th.evenement {
-    width: 60%;
-}
-
-th.datum {
-    width: 50%;
-}
-
-th.locatie {
-    width: 60%;
-}
-
-th.info {
-    width: 50%
-}
-
-@media screen and (max-width: 840px) {
-    td {
-        font-size: 3vw;
-    }
-
-    th {
-        font-size: 4vw;
-    }
-
-    th.evenement {
-        width: 60%;
-    }
-
-    th.datum {
-        width: 50%;
-    }
-
-    th.locatie {
-        width: 60%;
-    }
-
-    th.info {
-        width: 50%
-    }
-
-    table, th, td {
-        width: 150%;
-        padding: 10px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-}
-
-.video {
-}
-
-.description {
-  background-color: #f1f1f1; /* Grey background color */
-  padding: 20px; /* Some padding */
-}
-
-.photoby {
-  position: absolute;
-  font-size: 1vw;
-  color: white;
-  bottom: 1vw;
-  right: 1vw;
-}
-
-  img {
-    position: relative;
-    display: block;
-    top: 6vw;
-    width: 100%;
-    height: auto; padding-bottom: 2vh;
-  }

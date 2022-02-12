@@ -28,21 +28,10 @@
                 background-position: center;
             }
 
-            .sticky {
-                position: fixed;
-                top: 0;
-                z-index: 1000;
-                width: 100%;
-            }
-
-            .sticky + .content {
-                padding-top: 102px;
-            }
-
             div.transparante-doos {
                 margin-left: 50%;
                 margin-right: 3%;
-                margin-top: 3%;
+                margin-top: 15%;
                 margin-bottom: 15%;
                 padding: 3%;
                 background-color: hsla(0, 0%, 0%, 0.6);
@@ -71,18 +60,14 @@
 
             @media screen and (max-width: 840px) {
                 div.transparante-doos {
-                    margin-left: 5vw;
-                    margin-right: 5vw;
-                    margin-top: 10vw;
-                    margin-bottom: 10vw;
-                    padding-left: 2vw;
-                    padding-right: 2vw;
-                    padding-top: 2vw;
-                    padding-bottom: 2vw;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    margin-top: 25%;
+                    margin-bottom: 15%;
+                    padding: 4%;
                 }
 
                 div.transparante-doos p {
-                    padding: 1vw;
                     font-weight: bold;
                     font-size: 100%;
                     color: white;
@@ -94,7 +79,7 @@
     </head>
 
     <body>
-        <div class="header" id="myHeader">
+        <div class="header">
             <div class="navbar animate__fadeInDown animate__animated">
                 <a href="./index.html" class="left name" >Isabel Dhallé</a>
                 <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
@@ -126,21 +111,9 @@
 
         </main>
         <script>
-            window.onscroll = function() {stickFunction()};
-                var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
-
-            function stickFunction() {
-                if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-                } else {
-                header.classList.remove("sticky");
-                }
-            }
 
             function myFunction() {
                 var x = document.getElementById("myLinks");
-                var y = document.getElementById("fa-bars-id");
 
                 if (x.style.display === "block") {
                     x.style.display = "none";

@@ -28,15 +28,14 @@
                 margin-bottom: 25%;
             }
 
-            .sticky {
-                position: fixed;
-                top: 0;
-                z-index: 1000;
-                width: 100%;
+            main {
+                margin-top: 15%;
             }
 
-            .sticky + .content {
-                padding-top: 102px;
+            @media screen and (max-width: 840px) {
+
+            main {
+                margin-top: 25%;
             }
 
         </style>
@@ -59,7 +58,6 @@
         </div>
 
         <main>
-            <br><br><br>
             <div style="overflow-x: auto; overflow-y: hidden;">
                 <table class="animate__animated animate__fadeInUp content">
                     <tr>
@@ -151,19 +149,6 @@
         </main>
 
         <script>
-
-            window.onscroll = function() {stickFunction()};
-
-                var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
-
-            function stickFunction() {
-                if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-                } else {
-                header.classList.remove("sticky");
-                }
-            }
 
             function myFunction() {
 

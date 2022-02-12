@@ -5,17 +5,20 @@
     * [X] achtergrond centreren  #beadc139
     * [X] text size  #6a25dfd0
     * [X] favicon  #9d6750aa
-    * [o] clean up source code  #9923da91
+    * [.] clean up source code  #9923da91
         * [X] tabs & inspringingen  #bffacbf0
+        * [ ] commentaar en uitleg toevoegen  #bebe626a
         * [ ] s/o naar cartier  #7a80dec9
     * [X] animaties  #bd7055c5
         * [X] foto index  #524e754b
-    * [ ] *IMPORTANT*: jump glitch scrolling !!  #bfe49492
+    * [X] IMPORTANT: jump glitch scrolling !!!  #bfe49492
+    %% * [ ] page scrollt naar beneden bij reload - alleen bij te snelle reload, niet zo belangrijk  #f361f500
     * [ ] online zetten  #730bdf2e
         * [ ] domein  #a33078f5
             * [ ] domein kopen  #fc933ae0
             * [ ] domein linken aan public ip-adres raspberrypi  #2592f3e6
-        * [ ] port forwarding  #087ae3fd
+        * [ ] internet fixen  #1a03341b
+            * [ ] port forwarding  #087ae3fd
 
 = about =
     * [X] margin onder transparante doos  #71a7bf2d
@@ -39,7 +42,7 @@
     * [ ] beschrijving kolom (eventueel)  #c18adecd
 
 = evenementen =
-    * [X] *!!! TABEL BROKEN !!!*  #d8acb12b
+    * [X] TABEL BROKEN !!!  #d8acb12b
         * [X] tabel gsm resize  #59473aa9
         * [X] tabel grootte v/d kolommen  #83c58880
         * [X] tabel navbar blijft niet  #5a973edd

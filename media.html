@@ -27,6 +27,10 @@
                 background-size: cover;
             }
 
+            main {
+                margin-top: 15%;
+            }
+
             .video-container {
                 position:relative;
                 padding-bottom:56.25%;
@@ -47,20 +51,13 @@
                 padding-bottom:7.5vw;
             }
 
-            .sticky {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 1000;
-            }
-
-            .sticky + .content {
-                padding-top: 102px;
-            }
-
             @media screen and (max-width: 840px) {
+
                 body {
                     background-image: url('Images/ImagineBelgiumFinale2021_171-phone.jpg');
+                }
+                main {
+                    margin-top: 25%;
                 }
             }
 
@@ -85,7 +82,7 @@
         </div>
 
         <main>
-            <div class="video-container content">
+            <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/APUYkCekYrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
@@ -103,18 +100,6 @@
         </main>
 
         <script>
-            window.onscroll = function() {stickFunction()};
-
-                var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
-
-            function stickFunction() {
-                if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-                } else {
-                header.classList.remove("sticky");
-                }
-            }
 
             function myFunction() {
                 var x = document.getElementById("myLinks");

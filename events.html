@@ -1,136 +1,214 @@
 <!DOCTYPE html>
+
 <html lang="nl">
-<head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>Evenementen Isabel Dhallé</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div class="header">
-        <div class="navbar">
-            <a href="./index.html" >ISABEL DHALLÉ</a>
-            <a href="./media.html" class="right">Media</a>
-            <a href="./events.html" class="right">Evenementen</a>
-            <a href="./about.html" class="right">Over mij</a>
+    <head>
+        <title>Evenementen Isabel Dhallé</title>
+        <link rel="Stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            body {
+                background-image: url('Images/isabel.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                width: 100%;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id" style="--fa-animation-iteration-count:2"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="active right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <main>
-        <br><br><br>
 
-<table>
-    <tr>
-    <th>
-        Evenement
-    </th>
-    <th>
-        Datum
-    </th>
-    <th>
-        Website
-    </th>
-    <th>
-        Foto
-&nbsp;
-    </th>
-    </tr>
-    <tr>
-    <td>
-        Duo Kalliste + Jens & Isabel
-    </td>
-    <td>
-        Sun, Feb 20, 2022<br> 6:00 PM CET
-    </td>
-    <td>
-        <a href="https://www.eventbrite.be/e/duo-kalliste-jens-isabel-tickets-259052913237?aff=eemailordconf">Duo Kalliste + Jens & Isabel<br> week van de klank</a>
-    </td>
-    <td>
-        <img src="Images/evenementen/week-van-de-klank.jpg" alt="week van de klank" width=150px />
-    </td>
-    </tr>
-    <tr>
-    <td>
-        Phoenix Sextet & Thalates kwartet
-    </td>
-    <td>
-        10/03/2022<br> 20:00 - 21:30
-    </td>
-    <td>
-        <a href="https://arte-amanti.be/events/phoenix-sextet/">Phoenix Sextet & Thalates kwartet </a>
-    </td>
-    <td>
-        <img src="Images/evenementen/Thaletes-Kwartet_465x310-300x200.jpg" alt="thaletes-kwartet" width=150px />
-        <img src="Images/evenementen/Phoenix-Sextet-v1_465x310.jpg" alt="Phoenix Sextet" width=150px />
+        <main>
+            <br><br><br>
+            <div style="overflow-x: auto; overflow-y: hidden;">
+                <table class="animate__animated animate__fadeInUp content">
+                    <tr>
+                    <th class="evenement">
+                        Evenement
+                    </th>
+                    <th class="datum">
+                        Datum
+                    </th>
+                    <th class="locatie">
+                        Locatie
+                    </th>
+                    <th class="info">
+                        Info
+                    </th>
+                        &nbsp;
+                    </tr>
+                    <tr>
+                    <td>
+                        Duo Kalliste + Jens & Isabel
+                    </td>
+                    <td>
+                        Zondag, 20 Februari, 2022 <br> 18:00u
+                    </td>
+                    <td>
+                        Le Delta<br>
+                        14 Avenue Fernand Golenvaux<br>
+                        5000<br> Namur
+                    </td>
+                    <td>
+                        <a href="https://www.eventbrite.be/e/duo-kalliste-jens-isabel-tickets-259052913237?aff=eemailordconf" target="_blank">Duo Kalliste + Jens & Isabel<br>week van de klank</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Phoenix Sextet &<br> Thalates kwartet
+                    </td>
+                    <td>
+                        Donderdag, 10 Maart, 2022<br> 20:00u
+                    </td>
+                    <td>
 
-    </td>
-    </tr>
-    <tr>
-    <td>
-        Passieconcert door Cantate Aarschot
-    </td>
-    <td>
-        wo 30 mrt 2022 <br> 20.00u
-        za 2 april 2022 <br> 20.00u
-    </td>
-    <td>
-        <a href="https://www.hetgasthuis.be/voorstelling/3072/zangkoor-cantate">Zangkoor Cantate</a>
-        <a href="https://www.herselt.be/passieconcertcantate">Phoenix Sextet</a>
-    </td>
-    <td>
-        <img src="Images/evenementen/cantate.jpg" alt="Zangkoor cantate" width=150px; />
-    </td>
-    </tr>
-    <tr>
-    <td>
-        Youth Orchestra Flanders
-    </td>
-    <td>
-        zaterdag 26 maart 2022 <br> 20:00 <br>
-        zondag 27 maart 2022 <br> 15:00
-    </td>
-    <td>
-        <a href="https://www.ticketsbrugge.be/nl/youth-orchestra-flanders-8">YOF ticketsbrugge</a>
-        <br><br>
-        <a href="https://www.flagey.be/nl/activity/8118-youth-orchestra-flanders-liebrecht-vanbeckevoort">YOF flagey</a>
-    </td>
-    <td>
-        <img src="Images/evenementen/yof-liebrecht.jpg" alt="image retie" width=150px; />
-    </td>
-    </tr>
+                        Sint-Pieterskerk<br>
+                        Dorpsplein 1,<br> 3110 Rotselaar, Belgium
+                    </td>
+                    <td>
+                        <a href="https://arte-amanti.be/events/phoenix-sextet/" target="_blank">Phoenix Sextet & Thalates kwartet </a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Youth Orchestra Flanders
+                    </td>
+                    <td>
+                        <li>Zaterdag, 26 Maart, 2022 <br> 20:00u <br></li><br>
+                        <li>Zondag, 27 Maart, 2022 <br> 15:00u</li>
+                    </td>
+                    <td>
+                        <li>Concertgebouw Brugge, Concertzaal</li><br>
+                        <li>Flagey Brussel</li>
+                    </td>
+                    <td>
+                        <li><a href="https://www.ticketsbrugge.be/nl/youth-orchestra-flanders-8" target="_blank">YOF ticketsbrugge</a></li>
+                        <br>
+                        <li><a href="https://www.flagey.be/nl/activity/8118-youth-orchestra-flanders-liebrecht-vanbeckevoort" target="_blank">YOF flagey</a></li>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Passieconcert door Cantate Aarschot
+                    </td>
+                    <td>
+                        <li>Woensdag, 30 Maart, 2022 <br> 20.00u<br></li><br>
+                        <li>Zaterdag, 2 April, 2022 <br> 20.00u</li>
+                    </td>
+                    <td>
+                        <li>Onze-Lieve-Vrouwkerk Aarschot,<br> Jan Van Ophemstraat,<br> 3200 Aarschot</li><br>
+                        <li>Sint-Servatiuskerk Kerkstraat,<br> 2230 Herselt</li>
 
-</table>
-<br><br><br>
-    </main>
+                    </td>
+                    <td>
+                        <li><a href="https://www.hetgasthuis.be/voorstelling/3072/zangkoor-cantate" target="_blank">Zangkoor Cantate</a></li>
+                        <li><a href="https://www.herselt.be/passieconcertcantate" target="_blank">Zangkoor Cantate</a></li>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+            <br><br><br>
+        </main>
 
-<div class="footer">
-      <p>&copy; Isabel Dhallé</p>
+        <script>
 
-    </div>
+            window.onscroll = function() {stickFunction()};
 
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
 
-</body>
+            function stickFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+            }
+
+            function myFunction() {
+
+                var x = document.getElementById("myLinks");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+
+    </body>
 </html>
 
 
 
 
+<!-- --------- -->
+<!-- TEMPLATE  -->
+<!-- --------- -->
 
 
 
-
-
-<!-- TEMPLATE -->
     <!-- <tr> -->
     <!-- <td> -->
-    <!--     Phoenix Sextet -->
+    <!--     Concert Titel      -->
     <!-- </td> -->
     <!-- <td> -->
-    <!--     10/03/2022<br> 20:00 - 21:30 -->
+    <!--     <li>dag, nr maand, jaar <br> 00.00u<br></li><br> -->
+    <!--     <li>dag, nr maand, jaar <br> 00.00u<br></li><br> -->
     <!-- </td> -->
     <!-- <td> -->
-    <!--     <a href="https://arte-amanti.be/events/phoenix-sextet/">Phoenix Sextet</a> -->
+    <!--     <li>Onze-Lieve-Vrouwkerk Aarschot,<br> Jan Van Ophemstraat,<br> 3200 Aarschot</li><br> -->
+    <!--     <li>Sint-Servatiuskerk Kerkstraat,<br> 2230 Herselt</li> -->
+
     <!-- </td> -->
     <!-- <td> -->
-    <!--     <img src="media/retie 2008 023.jpg" alt="image retie" style="width=512px; height:384px;" /> -->
+    <!--     <li><a href="https://www.hetgasthuis.be/voorstelling/3072/zangkoor-cantate" target="_blank">Zangkoor Cantate</a></li> -->
+    <!--     <li><a href="https://www.herselt.be/passieconcertcantate" target="_blank">Zangkoor Cantate</a></li> -->
     <!-- </td> -->
     <!-- </tr> -->

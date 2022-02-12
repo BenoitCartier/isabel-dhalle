@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+    <head>
+        <title>Isabel Dhallé</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                background-image: url('Images/IMG_3056.JPG');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+            }
+
+            div.transparante-doos {
+                margin-left: 60%;
+                margin-right: 5%;
+                margin-top: 10%;
+                margin-bottom: 0;
+                background-color: hsla(0, 0%, 0%, 0.6);
+                color: white;
+            }
+
+            div.transparante-doos p {
+                padding: 1%;
+            }
+
+            div.transparante-doos a:visited {
+                color: white;
+            }
+
+            div.transparante-doos a:hover {
+                color: #CF7C0B;
+            }
+
+            div.transparante-doos h2 {
+                font-size: 170%;
+                text-align: center;
+            }
+
+            div.transparante-doos li {
+                font-size: 120%;
+                font-weight: bold;
+                word-break: break-all;
+                list-style-type: none;
+                text-align: left;
+            }
+
+            @media screen and (max-width: 840px) {
+                div.transparante-doos {
+                    margin-left: 25%;
+                    margin-right: 0;
+                    margin-top: 25%;
+                    margin-bottom: 0;
+                }
+
+                div.transparante-doos p {
+                    font-weight: bold;
+                    font-size: 90%;
+                    color: white;
+                    opacity: 1;
+                }
+
+                div.transparante-doos h2 {
+                    /* color: #7fa0fc; */
+                    font-size: 150%;
+                    text-align: center;
+                }
+
+                div.transparante-doos li {
+                    /* color: #7fa0fc; */
+                    font-size: 95%;
+                    font-weight: bold;
+                    word-break: break-word;
+                    list-style-type: none;
+                    text-align: center;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id" style="--fa-animation-iteration-count:2"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="active right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="transparante-doos animate__animated animate__fadeInUp">
+                <p><h2 class="center">Contact</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope animate__fadeInLeft animate__animated"></i>  isabel.dhallee@gmail.com </li>
+                        <li><i class="fa-solid fa-phone fa-shake" style="--fa-animation-iteration-count:2"></i> +32 495 11 10 85</li>
+                    </ul>
+                </p>
+            </div>
+        </main>
+
+        <script>
+
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                var y = document.getElementById("fa-bars-id");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,68 +1,157 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 
-<head>
-<title>Isabel Dhallé</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <title>Isabel Dhallé</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-<body>
-    <div class="header">
-        <div class="navbar">
-            <a href="./index.html" >ISABEL DHALLÉ</a>
-            <a href="./media.html" class="right">Media</a>
-            <a href="./events.html" class="right">Evenementen</a>
-            <a href="./about.html" class="right">Over mij</a>
-        </div>
-    </div>
-    <main>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="row">
-            <div class="side">
-                <picture>
-                    <img src="Images/retie 2008 023-small.jpg" alt="isabel in retie 2008" width=245px />
-                </picture>
-                <br><br>
-                <picture>
-                    <img src="Images/IMG_3056.JPG" alt="isabel orkest" width=245px />
-                </picture>
-                <br><br>
-                <picture>
-                    <img src="Images/Isabel Matsumoto 0331_10.jpg" alt="isabel in japan" width=245px />
-                </picture>
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
 
+        <style>
+
+            div.transparante-doos {
+                margin-left: 50%;
+                margin-right: 3%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                padding: 3%;
+                background-color: hsla(0, 0%, 0%, 0.6);
+                color: white;
+            }
+
+            div.transparante-doos p {
+                padding-bottom: 5%;
+                font-weight: bold;
+                font-size: 95%;
+                color: white;
+                opacity: 1;
+            }
+
+            div.transparante-doos a:link {
+                color: white;
+            }
+
+            div.transparante-doos a:visited {
+                color: white;
+            }
+
+            div.transparante-doos a:hover {
+                color: #CF7C0B;
+            }
+
+            @media screen and (max-width: 840px) {
+                div.transparante-doos {
+                    margin-left: 5vw;
+                    margin-right: 5vw;
+                    margin-top: 10vw;
+                    margin-bottom: 10vw;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    padding-top: 2vw;
+                    padding-bottom: 2vw;
+                }
+
+                div.transparante-doos p {
+                    padding: 1vw;
+                    font-weight: bold;
+                    font-size: 100%;
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+            body {
+                background-image: url('Images/IMG_5438-cropped.JPG');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover ;
+                background-position: center;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                width: 100%;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header" id="myHeader">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id" style="--fa-animation-iteration-count:2"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="active right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
             </div>
-            <div class="main">
-             <p>
-                Isabel Dhallé (2001) begon op 4-jarige leeftijd met vioolspelen volgens de Suzuki-methode in de
-                Stedelijke Academie van Turnhout bij Koen Rens. In 2019 studeerde ze in het secundair onderwijs af
-                in de richting: Grieks-Latijn en behaalde ze de grootste onderscheiding op haar eindexamen viool. <br>
-                Sinds september 2019 studeert Isabel aan het Koninklijk Conservatorium van Antwerpen bij Guido De
-                Neve. In 2020 startte ze ook in de dirigeerklas van Ivo Venkov. Isabel heeft al in vele landen
-                concerten gegeven waaronder Nederland, Frankrijk, Polen, Letland, Litouwen, Duitsland, Japan, Spanje, Zwitserland,… In 2016 had ze de kans om een concert te spelen in de Royal Albert Hall in Londen. Ze volgde al verschillende masterclasses bij onder meer
-                Anna Podhajska (Polen), Brian Lewis (USA), Haruo Goto (Australië), Guy Danel (Frankrijk), Karol Marianowski (Polen), Philippe
-                Graffin (Frankrijk), Erkki Palola (Finland), Yasuki Nakamura (Australië), Christophe Bossuat (Frankrijk) Łukasz Błaszczyk (Polen) , Clive Brown (Oostenrijk),… Isabel had al meermaals de kans om als solist met orkest te spelen. Zo speelde ze onder meer Introduction and Rondo Capriccioso van C. Saint-Saëns en het dubbelconcerto van J.S. Bach met orkest.
-                        </p>
-                        <p>
-                Isabel is ook zeer geïnteresseerd in barokmuziek. Zo volgt ze ook barokviool bij An van Laethem en
-                geeft ze regelmatig concerten in oude muziek. Ook is Isabel gepassioneerd door kamermuziek. Sinds
-                2021 is ze eerste viool van het Thaletas kwartet waarmee ze uitgenodigd is om te spelen op het Arte
-                Amanti Kamermuziekfestival.
-                        </p>
-                            <p>
-                In 2021 stonden Jens Vermeiren (piano) en Isabel samen in de finale van Imagine Belgium een wedstrijd van Jeugd en Muziek.
-                Isabel heeft al veel orkestervaring opgedaan o.a. in het Euregio Jeugdorkest, Youth Orchestra Flanders, Con spirito orkest, Virago,… Ook was ze van 2017 tot 2019 concertmeester van het orkest van de muziekacademie van Turnhout o.l.v Bart Van Casteren, Wilfried van Gorp en Hans Aerts.
-                        </p>
-            </div>
         </div>
 
-        <br><br><br>
-    </main>
-    <div class="footer">
-      <p>&copy; Isabel Dhallé</p>
+        <main>
+            <div class="transparante-doos content animate__animated animate__fadeInUp">
+                <p>Isabel Dhallé (2001) begon op 4-jarige leeftijd met vioolspelen volgens de Suzuki-methode in de <a href="https://muziekacademieturnhout.turnhout.be/" target="_blank"> Stedelijke Academie van Turnhout</a> bij <a href="https://suzukiassociation.org/news/author/koen-rens/" target="_blank">Koen Rens</a>. In 2019 studeerde ze in het secundair onderwijs af in de richting: Grieks-Latijn en behaalde ze de grootste onderscheiding op haar eindexamen viool. Sinds september 2019 studeert Isabel aan het <a href="https://www.ap-arts.be/koninklijk-conservatorium-antwerpen" target="_blank">Koninklijk Conservatorium van Antwerpen</a> bij <a href="https://www.ap.be/persoon/guido-de-neve" target="_blank">Guido De Neve</a>. In 2020 startte ze ook in de dirigeerklas van <a href="https://www.ap.be/persoon/ivo-venkov" target="_blank">Ivo Venkov</a>. <br> Ze volgde al verschillende masterclasses bij onder meer <a href="https://www.instytutsuzuki.pl/anna-podhajska" target="_blank">Anna Podhajska (Polen)</a>, <a href="https://suzukiassociation.org/news/author/brian-lewis/" target="_blank">Brian Lewis (USA)</a>, <a href="https://www.suzukimusicqld.com.au/html/haruo_goto.html" target="_blank">Haruo Goto (Australië)</a>, <a href="http://www.conservatoire.be/etudes/enseignants/danel-guy.html" target="_blank">Guy Danel (Frankrijk)</a>, <a href="https://orpheeclassics.com/2020/06/06/karol-marianowski/" target="_blank">Karol Marianowski (Polen)</a>, <a href="https://www.kcb.be/nl/philippe-graffin" target="_blank">Philippe Graffin (Frankrijk)</a>, <a href="https://helsinginkaupunginorkesteri.fi/en/content/erkki-palola" target="_blank">Erkki Palola (Finland)</a>, <a href="https://suzukiassociation.org/news/yasuki-nakamura-honoured-for-service-to-music/" target="_blank">Yasuki Nakamura (Australië)</a>, <a href="https://www.afpedagogiesuzuki.fr/pedagogie-suzuki/christophe-bossuat/" target="_blank">Christophe Bossuat (Frankrijk)</a> <a href="https://www.wieniawski.pl/lukasz_blaszczyk.html" target="_blank">Łukasz Błaszczyk (Polen)</a> , <a href="https://ahc.leeds.ac.uk/music/staff/215/professor-clive-brown" target="_blank">Clive Brown (Oostenrijk)</a>,…</p>
 
-    </div>
-</body>
+                <p>Isabel is ook zeer geïnteresseerd in barokmuziek. Zo volgt ze ook barokviool bij An van Laethem en
+                geeft ze regelmatig concerten in oude muziek. Ook is Isabel gepassioneerd door kamermuziek. <br> Isabel had al meermaals de kans om als solist met orkest te spelen. Zo speelde ze onder meer Introduction and Rondo Capriccioso van C. Saint-Saëns en het dubbelconcerto van J.S. Bach met orkest.</p>
+
+                <p>Isabel heeft al in vele landen
+                concerten gegeven waaronder Nederland, Frankrijk, Polen, Letland, Litouwen, Duitsland, Japan, Spanje, Zwitserland,… In 2016 had ze de kans om een concert te spelen in de <a href="https://en.wikipedia.org/wiki/Royal_Albert_Hall" target="_blank">Royal Albert Hall</a> in Londen.</p>
+
+                <p>Sinds 2021 is ze eerste viool van het <a href="https://arte-amanti.be/artists/thaletas-quartet/" target="_blank">Thaletas kwartet</a> waarmee ze uitgenodigd is om te spelen op het <a href="https://arte-amanti.be/" target="_blank">Arte Amanti Kamermuziekfestival</a>.</p>
+
+                <p>In 2021 stonden Isabel en Jens Vermeiren (piano) samen in de finale van <a href="https://www.imaginemusicexperience.net/belgium?lang=nl" target="_blank">Imagine Belgium</a> een wedstrijd van Jeugd en Muziek. Isabel heeft al veel orkestervaring opgedaan o.a. in het <a href="https://www.euregiojeugdorkest.com/" target="_blank">Euregio Jeugdorkest</a>, <a href="https://www.youthorchestraflanders.be/nl/" target="_blank">Youth Orchestra Flanders</a>, <a href="https://www.facebook.com/conspiritosymphonyorchestra/" target="_blank">Con spirito orkest</a>, <a href="https://www.viragosymphonicorchestra.com/" target="_blank">Virago</a>,… Ook was ze van 2017 tot 2019 concertmeester van het orkest van de muziekacademie van Turnhout o.l.v <a href="https://vlaamssymfonischorkest.be/Home/orkest/dirigent" target="_blank">Bart Van Casteren</a>, <a href="https://www.vioolsuzuki.be/" target="_blank">Wilfried van Gorp</a> en <a href="https://nl.wikipedia.org/wiki/Hans_Aerts" target="_blank">Hans Aerts</a>.</p>
+
+        </main>
+        <script>
+            window.onscroll = function() {stickFunction()};
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+            function stickFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+            }
+
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                var y = document.getElementById("fa-bars-id");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+        </script>
+    </body>
 </html>

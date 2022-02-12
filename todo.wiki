@@ -1,0 +1,41 @@
+
+== TODO ==
+
+= algemeen =
+    * [X] achtergrond centreren  #beadc139
+    * [X] text size  #6a25dfd0
+    * [X] favicon  #9d6750aa
+    * [ ] clean up source code  #9923da91
+        * [ ] tabs & inspringingen  #bffacbf0
+        * [ ] s/o naar cartier  #7a80dec9
+    * [X] animaties  #bd7055c5
+        * [X] foto index  #524e754b
+    * [ ] online zetten  #730bdf2e
+
+= about =
+    * [X] margin onder transparante doos  #71a7bf2d
+    * [X] herschikking v/d tekst  #a575c44a
+= navbar =
+    * [O] *HAMBURGER*  #f49b0f4f
+        * [X] hamburger/ pannenkoeken/ sandwich  #28ca6d8c
+        * [X] stapel pannenkoeken valt van 't tafel  #10291e4d
+        * [o] hamburger-kruis #d46c0b90
+            * [X] kruis  #d0a5fc35
+            * [ ] sint-andrieskruis  #3a0dedf2
+        * [X] hamburger werkt niet altijd  #ea091ce0
+    * [X] lijntje  #fd337ab1
+    * [X] volgorde mobiel  #47ddc636
+    * [X] grootte v/d knoppen  #6b904e23
+    * [X] active = grijs  #f89e8ac4
+
+= media =
+    * [X] youtube-video resize  #8497f891
+    * [X] grootte youtube-embed  #3f422756
+    * [ ] beschrijving kolom  #c18adecd
+
+= evenementen =
+    * [X] *!!! TABEL BROKEN !!!*  #d8acb12b
+        * [X] tabel gsm resize  #59473aa9
+        * [X] tabel grootte v/d kolommen  #83c58880
+        * [X] tabel navbar blijft niet  #5a973edd
+        * [X] hide vertical scroll bar  #839ba819

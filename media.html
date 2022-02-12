@@ -1,48 +1,136 @@
 <!DOCTYPE html>
+
 <html lang="nl">
+    <head>
+        <title>Isabel Dhallé</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-<head>
-<title>Isabel Dhallé</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    <div class="header">
-        <div class="navbar">
-            <a href="./index.html" >ISABEL DHALLÉ</a>
-            <a href="./media.html" class="right">Media</a>
-            <a href="./events.html" class="right">Evenementen</a>
-            <a href="./about.html" class="right">Over mij</a>
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            body {
+                background-image: url('Images/ImagineBelgiumFinale2021_171-cropped.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .video-container {
+                position:relative;
+                padding-bottom:56.25%;
+                padding-top:30px;
+                height:0;
+                overflow:hidden;
+            }
+
+            .video-container iframe, .video-container object, .video-container embed {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                padding-left:15vw;
+                padding-right:15vw;
+                padding-top:7.5vw;
+                padding-bottom:7.5vw;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+            @media screen and (max-width: 840px) {
+                body {
+                    background-image: url('Images/ImagineBelgiumFinale2021_171-phone.jpg');
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header" id="myHeader">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="active right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <main>
 
-        <br><br><br>
-        <div class="video">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/APUYkCekYrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <main>
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/APUYkCekYrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-        <br><br><br>
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/x6pCPTbtJoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-        <div class="video">
-        <iframe width="960" height="540" src="https://www.youtube.com/embed/x6pCPTbtJoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <br><br><br>
-        <div class="video">
-        <iframe width="960" height="540" src="https://www.youtube.com/embed/eShi3GNIHJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <br><br><br>
-        <div class="video">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/bDEjOdUdKhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/eShi3GNIHJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-        <br><br><br>
-    </main>
-    <div class="footer">
-      <p>&copy; Isabel Dhallé</p>
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/bDEjOdUdKhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
 
-    </div>
-</body>
+        <script>
+            window.onscroll = function() {stickFunction()};
+
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+            function stickFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+            }
+
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+    </body>
 </html>

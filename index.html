@@ -1,42 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="nl">
+    <head>
+        <title>Isabel Dhallé</title>
 
-<head>
-<title>Isabel Dhallé</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-</head>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
 
-<body>
-    <div class="header">
-        <div class="navbar">
-            <a href="./index.html" >ISABEL DHALLÉ</a>
-            <a href="./media.html" class="right">Media</a>
-            <a href="./events.html" class="right">Evenementen</a>
-            <a href="./about.html" class="right">Over mij</a>
-        </div>
-    </div>
-    <main>
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="Images/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#333333">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="row">
-            <div class="side">
-                <p><q>ADD TEXT HERE</q></p>
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
 
+        <style>
+
+            body {
+                background-image: url('Images/isabel-main-cropped.JPG');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @media screen and (max-width: 840px) {
+                ".fa" {
+                    vertical-align: middle;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body class= id="myBody">
+        <div class="header">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
             </div>
-            <div class="main">
-
-                <picture>
-                    <img src="Images/ImagineBelgiumFinale2021_175.jpg" alt="isabel image home" style="width:500px" class="center">
-                </picture>
-
-            </div>
         </div>
 
-    </main>
-    <div class="footer">
-      <p>&copy; Isabel Dhallé</p>
+        <script>
 
-    </div>
-</body>
+            function myFunction() {
+
+                var x = document.getElementById("myLinks");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+    </body>
 </html>

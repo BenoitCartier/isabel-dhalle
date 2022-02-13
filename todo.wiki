@@ -5,10 +5,10 @@
     * [X] achtergrond centreren  #beadc139
     * [X] text size  #6a25dfd0
     * [X] favicon  #9d6750aa
-    * [.] clean up source code  #9923da91
+    * [o] clean up source code  #9923da91
         * [X] tabs & inspringingen  #bffacbf0
         * [ ] commentaar en uitleg toevoegen  #bebe626a
-        * [ ] s/o naar cartier  #7a80dec9
+        * [X] s/o naar cartier  #7a80dec9
     * [X] animaties  #bd7055c5
         * [X] foto index  #524e754b
     * [X] IMPORTANT: jump glitch scrolling !!!  #bfe49492
@@ -24,12 +24,12 @@
     * [X] margin onder transparante doos  #71a7bf2d
     * [X] herschikking v/d tekst  #a575c44a
 = navbar =
-    * [O] *HAMBURGER*  #f49b0f4f
+    * [X] *HAMBURGER*  #f49b0f4f
         * [X] hamburger/ pannenkoeken/ sandwich  #28ca6d8c
         * [X] stapel pannenkoeken valt van 't tafel  #10291e4d
-        * [o] hamburger-kruis  #d46c0b90
+        * [X] hamburger-kruis  #d46c0b90
             * [X] kruis  #d0a5fc35
-            * [ ] sint-andrieskruis  #3a0dedf2
+            * [X] sint-andrieskruis  #3a0dedf2
         * [X] hamburger werkt niet altijd  #ea091ce0
     * [X] lijntje  #fd337ab1
     * [X] volgorde mobiel  #47ddc636

@@ -1,3 +1,14 @@
+/*
+ ________  ________  ________  _________  ___  _______   ________          ________  ________  ________  _________  ___  ___  _______   ________  ________
+|\   ____\|\   __  \|\   __  \|\___   ___\\  \|\  ___ \ |\   __  \        |\   __  \|\   __  \|\   __  \|\___   ___\\  \|\  \|\  ___ \ |\   __  \|\   ____\
+\ \  \___|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \ \   __/|\ \  \|\  \       \ \  \|\ /\ \  \|\  \ \  \|\  \|___ \  \_\ \  \\\  \ \   __/|\ \  \|\  \ \  \___|_
+ \ \  \    \ \   __  \ \   _  _\   \ \  \ \ \  \ \  \_|/_\ \   _  _\       \ \   __  \ \   _  _\ \  \\\  \   \ \  \ \ \   __  \ \  \_|/_\ \   _  _\ \_____  \
+  \ \  \____\ \  \ \  \ \  \\  \|   \ \  \ \ \  \ \  \_|\ \ \  \\  \|       \ \  \|\  \ \  \\  \\ \  \\\  \   \ \  \ \ \  \ \  \ \  \_|\ \ \  \\  \\|____|\  \
+   \ \_______\ \__\ \__\ \__\\ _\    \ \__\ \ \__\ \_______\ \__\\ _\        \ \_______\ \__\\ _\\ \_______\   \ \__\ \ \__\ \__\ \_______\ \__\\ _\ ____\_\  \
+    \|_______|\|__|\|__|\|__|\|__|    \|__|  \|__|\|_______|\|__|\|__|        \|_______|\|__|\|__|\|_______|    \|__|  \|__|\|__|\|_______|\|__|\|__|\_________\
+                                                                                                                                                    \|_________|
+ */
+
 * {
   box-sizing: border-box;
 }
@@ -29,6 +40,7 @@ a:active {
 }
 
 .navbar {
+    display: inline-block; /* Change the display to block, for responsive reasons (see below) */
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -40,7 +52,6 @@ a:active {
 /* Style the navigation bar links */
 .navbar a {
     float: left; /* Make sure that the links stay side-by-side */
-    display: inline-block; /* Change the display to block, for responsive reasons (see below) */
     color: white; /* White text color */
     text-align: center; /* Center the text */
     padding: 14px 20px; /* Add some padding */
@@ -68,10 +79,6 @@ a:active {
 
 .navbar a.active {
     color: gray; /* give gray color to active tab */
-}
-
-/* Change color on hover/mouse-over */
-.navbar a.right:hover {
 }
 
 .navbar #myLinks {
@@ -105,7 +112,6 @@ a:active {
     flex: 70%; /* Set the width of the main content */
     background-color: white; /* White background color */
     padding: 20px; /* Some padding */
-    font-weight:
 }
 
 .description {
@@ -209,7 +215,7 @@ th.info {
     .navbar a.name.left {
         float: left;
         width: 35%;
-        font-size: 4.5vw;
+        font-size: 25px;
     }
 
     .navbar a.icon.left {

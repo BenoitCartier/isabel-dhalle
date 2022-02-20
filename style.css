@@ -215,7 +215,7 @@ th.info {
     .navbar a.name.left {
         float: left;
         width: 35%;
-        font-size: 25px;
+        font-size: 17px;
     }
 
     .navbar a.icon.left {
@@ -225,6 +225,7 @@ th.info {
         top: 0;
         visibility: visible;
         width: 18%;
+        font-size: 20px;
     }
 
     .navbar #myLinks {

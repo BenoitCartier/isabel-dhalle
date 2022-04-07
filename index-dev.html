@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+ <!-- ________  ________  ________  _________  ___  _______   ________          ________  ________  ________  _________  ___  ___  _______   ________  ________ -->
+<!-- |\   ____\|\   __  \|\   __  \|\___   ___\\  \|\  ___ \ |\   __  \        |\   __  \|\   __  \|\   __  \|\___   ___\\  \|\  \|\  ___ \ |\   __  \|\   ____\ -->
+<!-- \ \  \___|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \ \   __/|\ \  \|\  \       \ \  \|\ /\ \  \|\  \ \  \|\  \|___ \  \_\ \  \\\  \ \   __/|\ \  \|\  \ \  \___|_ -->
+ <!-- \ \  \    \ \   __  \ \   _  _\   \ \  \ \ \  \ \  \_|/_\ \   _  _\       \ \   __  \ \   _  _\ \  \\\  \   \ \  \ \ \   __  \ \  \_|/_\ \   _  _\ \_____  \ -->
+ <!--  \ \  \____\ \  \ \  \ \  \\  \|   \ \  \ \ \  \ \  \_|\ \ \  \\  \|       \ \  \|\  \ \  \\  \\ \  \\\  \   \ \  \ \ \  \ \  \ \  \_|\ \ \  \\  \\|____|\  \ -->
+ <!--   \ \_______\ \__\ \__\ \__\\ _\    \ \__\ \ \__\ \_______\ \__\\ _\        \ \_______\ \__\\ _\\ \_______\   \ \__\ \ \__\ \__\ \_______\ \__\\ _\ ____\_\  \ -->
+ <!--    \|_______|\|__|\|__|\|__|\|__|    \|__|  \|__|\|_______|\|__|\|__|        \|_______|\|__|\|__|\|_______|    \|__|  \|__|\|__|\|_______|\|__|\|__|\_________\ -->
+ <!--                                                                                                                                                    \|_________| -->
+
+
+
+<html lang="nl">
+    <head>
+        <title>Isabel Dhallé persoonlijke website</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://isabeldhalle.be/Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://isabeldhalle.be/Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://isabeldhalle.be/Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://isabeldhalle.be/Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="https://isabeldhalle.be/Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="https://isabeldhalle.be/Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+
+        <meta charset="UTF-8"/>
+        <meta name="Description" CONTENT="Website van violiste Isabel Dhallé."/>
+        <meta name="msapplication-TileColor" content="#da532c"/>
+        <meta name="msapplication-config" content="https://isabeldhalle.be/Images/favicon/browserconfig.xml"/>
+        <meta name="theme-color" content="#333333"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Isabel Dhallé, Jan-Peter Dhallé, Karel Van Themsche"/>
+        <meta name="google-site-verification" content="w4ddD-mFUZLwGkZv0SUz7moUteAMoFJR34DksMz6Ybo"/>
+
+        <meta property="og:title" content="Isabel Dhallé violiste"/>
+        <meta property="og:description" content="Violiste Isabel Dhallé persoonlijke website"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://isabeldhalle.be/Images/isabel-main-cropped.JPG"/>
+
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Organization",
+            "url": "https://isabeldhalle.be",
+            "logo": "https://isabeldhalle.be/Images/isabel-main-cropped.JPG"
+        }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVZ7K4PRGQ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GVZ7K4PRGQ');
+        </script>
+
+        <style>
+
+            body {
+                background-image: url('Images/isabel-main-cropped.JPG');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @media screen and (max-width: 840px) {
+                .fa {
+                    vertical-align: middle;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body class= id="myBody" title="Isabel Dhallé violiste">
+        <div class="header">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about.html" class="right hvr-underline-from-center" id="about">Over Isabel</a>
+                        <a href="./events.html"class="right hvr-underline-from-center" id="event">Evenementen</a>
+                        <a href="./media.html" class="right hvr-underline-from-center" id="media">Media</a>
+                        <a href="./contact.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                        <a href="https://google.com" class="right translate hvr-underline-from-center">nl</a>
+                        <a href="https://google.com" class="right translate hvr-underline-from-center">fr</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            function myFunction() {
+
+                var x = document.getElementById("myLinks");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+    </body>
+</html>

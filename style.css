@@ -86,6 +86,25 @@ a:active {
     float: right;
 }
 
+.language a{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+.language {
+    display:grid;
+    margin-top: 171px;
+    background-color: hsla(0, 0%,100%, 80%);
+    float: right;
+    padding: 16px;
+    /* background: white; */
+}
+
+
+.language a:hover {
+    text-decoration: underline;
+}
 .center {
     display: block;
     margin-left: auto;

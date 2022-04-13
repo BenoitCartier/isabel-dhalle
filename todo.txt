@@ -1,0 +1,5 @@
+
+
+[ ] cookies melding
+[ ] scrollen van vertaling
+[ ] kleur vd navbar (optioneel)

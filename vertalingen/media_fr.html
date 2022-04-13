@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title>regardez les vidéos de violoniste Isabel Dhallé</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://isabeldhalle.be/Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://isabeldhalle.be/Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://isabeldhalle.be/Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://isabeldhalle.be/Images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="https://isabeldhalle.be/Images/favicon/safari-pinned-tab.svg" color="#333333">
+        <link rel="shortcut icon" href="https://isabeldhalle.be/Images/favicon/favicon.ico">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/bb7e8176a5.js" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVZ7K4PRGQ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GVZ7K4PRGQ');
+        </script>
+
+        <style>
+
+            body {
+                background-image: url('../Images/ImagineBelgiumFinale2021_171-cropped.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            main {
+                margin-top: 120px;
+            }
+
+            .video-container {
+                position:relative;
+                padding-bottom:56.25%;
+                padding-top:30px;
+                height:0;
+                overflow:hidden;
+            }
+
+            .video-container iframe, .video-container object, .video-container embed {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                padding-left:15vw;
+                padding-right:15vw;
+                padding-top:7.5vw;
+                padding-bottom:7.5vw;
+            }
+
+            @media screen and (max-width: 840px) {
+
+                body {
+                    background-image: url('../Images/ImagineBelgiumFinale2021_171-phone.jpg');
+                }
+                main {
+                    margin-top: 100px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body class= id="myBody" title="Isabel Dhallé violiste">
+        <div class="header">
+            <div class="navbar animate__fadeInDown animate__animated">
+                <a href="./index_fr.html" class="left name" >Isabel Dhallé</a>
+                <a href="javascript:void(0);" class="icon left" onclick="myFunction()">
+                    <i class="fa fa-bars" id="fa-bars-id"></i>
+                </a>
+
+                <div id="myLinks">
+                        <a href="./about_fr.html" class="right hvr-underline-from-center" id="about">À propos d'Isabel</a>
+                        <a href="./events_fr.html"class="right hvr-underline-from-center" id="event">Évènements</a>
+                        <a href="./media_fr.html" class="right hvr-underline-from-center" id="media">Médias</a>
+                        <a href="./contact_fr.html" class="right hvr-underline-from-center" id="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="language">
+            <a href="../media.html">nl</a>
+            <a href="media_fr.html">fr</a>
+        </div>
+
+        <main>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/APUYkCekYrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Soa0d09gc7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/x6pCPTbtJoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/eShi3GNIHJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container content">
+                <iframe src="https://www.youtube.com/embed/bDEjOdUdKhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <script>
+
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    document.getElementById("fa-bars-id").classList.add('fa-bars');
+                    document.getElementById("fa-bars-id").classList.remove('fa-xmark');
+
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("fa-bars-id").classList.remove('fa-bars');
+                    document.getElementById("fa-bars-id").classList.add('fa-xmark');
+                }
+            }
+
+        </script>
+    </body>
+</html>

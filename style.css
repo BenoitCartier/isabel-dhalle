@@ -46,7 +46,8 @@ a:active {
     z-index: 1000;
     width: 100%;
     overflow: hidden; /* Hide overflow */
-    background-color: #333; /* Dark background color */
+    /* background-color: #333; /* Dark background color */
+    background: linear-gradient(353deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 /* Style the navigation bar links */
@@ -180,7 +181,7 @@ td {
     /* background-color:white; */
 }
 tr:nth-child(even){background-color: black;opacity:0.8;}
-tr:nth-child(odd){background-color: #342125;opacity:0.8;}
+tr:nth-child(odd){background-color: #342125;opacity:0.8;} 
 
 th {
     font-weight:bold ;

@@ -1,8 +1,10 @@
 
 [ ] cookies melding
-[ ] kleur vd navbar
+[ ] kleur vd dozen/boxen / COMPLETE REDISIGN
 
 [x] scrollen van vertaling
   ->  (de knoppen zijn naar links versprongen...)
 [x] vertalingsknoppen op 'media.html' en 'media_fr.html' werken niet
 [x] alle vertalings knoppen
+[x] kleur vd navbar
+

@@ -1,6 +1,6 @@
 
 [ ] cookies melding
-[ ] kleur vd navbar (optioneel)
+[ ] kleur vd navbar
 
 [x] scrollen van vertaling
   ->  (de knoppen zijn naar links versprongen...)

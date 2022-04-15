@@ -93,6 +93,7 @@ a:active {
     color: black;
 }
 .language {
+    right: 0;
     display:grid;
     position: fixed;
     margin-top: 171px;

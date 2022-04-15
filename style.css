@@ -94,11 +94,11 @@ a:active {
 }
 .language {
     display:grid;
+    position: fixed;
     margin-top: 171px;
     background-color: hsla(0, 0%,100%, 80%);
     float: right;
     padding: 16px;
-    /* background: white; */
 }
 
 
